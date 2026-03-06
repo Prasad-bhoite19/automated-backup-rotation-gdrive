@@ -203,9 +203,17 @@ rclone ls gdrive:
 
 ```json
 {
-  "source_folder": "/home/ubuntu/data",
-  "drive_remote": "gdrive:Backups",
-  "webhook_url": "https://webhook.site/your-unique-url"
+  "project_name": "MyProject",
+  "source_directory": "/home/ubuntu/BackupProject/Projects",
+  "backup_directory": "/home/ubuntu/backups",
+  "gdrive_remote": "gdrive",
+  "gdrive_folder": "BackupFolderName",
+
+  "retention_daily": 7,
+  "retention_weekly": 4,
+  "retention_monthly": 3,
+
+  "webhook_url": "https://webhook.site/284d5480-874e-4566-ab28-037b97515273"
 }
 ```
 
